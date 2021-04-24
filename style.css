@@ -1,0 +1,276 @@
+/* filter */
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "El Messiri", sans-serif;
+	text-transform: capitalize;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+#nav {
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	height: 70px;
+	justify-content: space-evenly;
+	align-items: center;
+	background: #f1d2ef;
+}
+
+.nav-item a:hover {
+	cursor: pointer;
+	color: #fff;
+}
+
+.nav-item {
+	display: flex;
+	width: 200px;
+}
+
+#logo {
+	position: absolute;
+	left: 2rem;
+	top: 0.8rem;
+}
+
+ul li {
+	list-style: none;
+	margin: 0 1rem;
+	font-size: 1.3rem;
+}
+
+.cart {
+	border: 1px solid #222;
+	border-radius: 5px;
+	padding: 0.5rem;
+}
+
+.cart:hover {
+	border-color: #abbef1;
+	background: #abbef1;
+	color: #222;
+}
+
+.cart .fa-shopping-cart {
+	margin-right: 1rem;
+}
+
+.welcome {
+	width: 100%;
+	background: linear-gradient(
+			rgba(220, 241, 247, 0.3),
+			rgba(220, 241, 247, 0.3)
+		),
+		url(./img/headerBcg.jpeg) no-repeat center/cover;
+	height: 700px;
+}
+
+.welcome div {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	text-align: center;
+}
+
+.welcome h1 {
+	color: #e35656;
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.welcome-exp {
+	width: 150px;
+	font-size: 1.7rem;
+	border: 2px solid #000;
+	border-radius: 4px;
+	padding: 0.4rem;
+	letter-spacing: 3px;
+}
+
+.welcome-exp:hover {
+	cursor: pointer;
+	background: #555;
+	color: #eee;
+}
+
+.about {
+	height: 700px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background: rgb(255, 255, 255);
+}
+
+.about-left {
+	max-width: 500px;
+	margin: auto;
+}
+
+.about-title {
+	font-size: 2rem;
+	color: tomato;
+}
+.about-p {
+	margin-bottom: 2.5rem;
+}
+
+.about-exp {
+	font-size: 1rem;
+	border: 1px solid #000;
+	border-radius: 3px;
+	padding: 0.4rem;
+	letter-spacing: 2px;
+}
+
+.about-exp:hover {
+	cursor: pointer;
+	background: #555;
+	color: #eee;
+}
+
+.about-right {
+	height: 400px;
+	width: 500px;
+	margin: auto;
+	border: 3px solid #555;
+	top: -20px;
+}
+
+.about-right:hover {
+	outline: 5px solid #36bcf1;
+	transition: ease-in 0.3s;
+	opacity: 0.8;
+	border: none;
+}
+
+.img-about {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.store {
+	width: 100%;
+	height: 100%;
+	background: #e6e0be;
+}
+
+.store-title-div {
+	text-align: center;
+	padding-top: 2rem;
+}
+
+.store-title-div-p {
+	font-size: 2.3rem;
+}
+
+.menu {
+	height: 70px;
+	margin-top: 1.3rem;
+}
+
+.menu-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn {
+	margin: 0 1.3rem;
+	font-size: 1.4rem;
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 0 1.3rem;
+}
+
+.search {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+.fa-search {
+	padding: 0.7rem;
+	background: #e35656;
+}
+
+.fa-search:hover {
+	cursor: pointer;
+	opacity: 0.9;
+}
+
+.search-input {
+	width: 450px;
+	height: 40px;
+	padding: 0.3rem;
+	border-style: none;
+}
+
+.store-div {
+	width: 100%;
+}
+
+.item-div {
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 5rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.item-div .card {
+	height: 335px;
+	flex-direction: column;
+	display: flex;
+	margin: 3rem auto;
+}
+
+.img-container {
+	margin: 0;
+	height: 260px;
+	overflow: hidden;
+}
+
+.item-div .item-img {
+	width: 340px;
+	height: 280px;
+	transition: all 0.5s ease-in-out;
+}
+
+.img-container .item-img:hover {
+	transform: scale(1.2);
+}
+
+.item-div img:hover {
+	transform: scale(1);
+}
+
+.item-div .caption {
+	font-size: 1.3rem;
+	padding: 0.6rem;
+	width: 340px;
+	background: #fff;
+}
+
+.item-div .text {
+	margin-left: 0.7rem;
+}
+
+.show {
+	display: block;
+}
